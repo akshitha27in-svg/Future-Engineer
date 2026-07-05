@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Future Engineer | Build Your Engineering Career</title>
+<meta name="description" content="Future Engineer — premium roadmaps, progress tracking and resources for every software engineering career path.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= PRELOADER ================= -->
+<div id="preloader">
+  <div class="loader-core">
+    <span class="loader-ring"></span>
+    <span class="loader-text">FE</span>
+  </div>
+</div>
+
+<!-- ================= TOAST CONTAINER ================= -->
+<div id="toast-container" aria-live="polite"></div>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner container">
+    <a href="#home" class="brand" data-nav="home">
+      <span class="brand-mark">FE</span>
+      <span class="brand-name">Future<em>Engineer</em></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" data-nav="home" class="nav-link">Home</a>
+      <a href="#explore" data-nav="explore" class="nav-link">Roadmaps</a>
+      <a href="#dashboard" data-nav="dashboard" class="nav-link">Dashboard</a>
+      <a href="#contact" data-nav="contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions" id="navActions">
+      <!-- populated dynamically by script.js depending on auth state -->
+    </div>
+
+    <button class="burger" id="burgerBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="app">
+
+  <!-- ================= HOME PAGE ================= -->
+  <section class="page" id="page-home" data-page="home">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="grid-overlay"></div>
+        <div class="glow glow-red"></div>
+        <div class="glow glow-white"></div>
+        <div class="orbit-ring ring1"></div>
+        <div class="orbit-ring ring2"></div>
+        <div class="orbit-ring ring3"></div>
+      </div>
+      <div class="container hero-content">
+        <p class="eyebrow reveal">ENGINEER YOUR FUTURE — ONE ROADMAP AT A TIME</p>
+        <h1 class="hero-title reveal">
+          Stop guessing.<br>
+          <span class="text-gradient">Start building</span> your<br>
+          engineering career.
+        </h1>
+        <p class="hero-sub reveal">
+          32+ hand-crafted software engineering roadmaps — Beginner to Advanced —
+          with curated resources, real projects and a progress tracker that keeps you honest.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#explore" class="btn btn-primary" data-nav="explore">Explore Roadmaps</a>
+          <a href="#signup" class="btn btn-outline" data-nav="signup">Create Free Account</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat"><span class="stat-num" data-count="32">0</span><span class="stat-label">Roadmaps</span></div>
+          <div class="stat"><span class="stat-num" data-count="500">0</span><span class="stat-label">Resources</span></div>
+          <div class="stat"><span class="stat-num" data-count="120">0</span><span class="stat-label">Projects</span></div>
+          <div class="stat"><span class="stat-num" data-count="100">0</span><span class="stat-label">% Free</span></div>
+        </div>
+      </div>
+      <div class="scroll-cue"><span></span>Scroll</div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>FRONTEND</span><span>BACKEND</span><span>DEVOPS</span><span>CLOUD</span><span>AI / ML</span>
+        <span>CYBERSECURITY</span><span>DATA SCIENCE</span><span>MOBILE</span><span>BLOCKCHAIN</span><span>GAME DEV</span>
+        <span>FRONTEND</span><span>BACKEND</span><span>DEVOPS</span><span>CLOUD</span><span>AI / ML</span>
+        <span>CYBERSECURITY</span><span>DATA SCIENCE</span><span>MOBILE</span><span>BLOCKCHAIN</span><span>GAME DEV</span>
+      </div>
+    </div>
+
+    <!-- WHY SECTION -->
+    <section class="section why-section">
+      <div class="container">
+        <p class="eyebrow reveal">WHY FUTURE ENGINEER</p>
+        <h2 class="section-title reveal">Everything you need. Nothing you don't.</h2>
+        <div class="feature-grid">
+          <div class="feature-card glass reveal card-3d" data-goto="explore">
+            <div class="feature-icon">🗺️</div>
+            <h3>Structured Roadmaps</h3>
+            <p>Every path is broken into Beginner, Intermediate and Advanced stages so you always know what's next.</p>
+            <span class="feature-cta">Browse roadmaps →</span>
+          </div>
+          <div class="feature-card glass reveal card-3d" data-goto="dashboard">
+            <div class="feature-icon">✅</div>
+            <h3>Progress Tracker</h3>
+            <p>Check off skills as you learn them. Your progress is saved automatically to your account.</p>
+            <span class="feature-cta">Open your dashboard →</span>
+          </div>
+          <div class="feature-card glass reveal card-3d" data-goto="dashboard">
+            <div class="feature-icon">⭐</div>
+            <h3>Bookmarks</h3>
+            <p>Save the roadmaps you care about and access them instantly from your dashboard.</p>
+            <span class="feature-cta">View your bookmarks →</span>
+          </div>
+          <div class="feature-card glass reveal card-3d" data-goto="explore" data-focus-search="true">
+            <div class="feature-icon">🔍</div>
+            <h3>Smart Search</h3>
+            <p>Find the exact roadmap you need with instant search and category filters.</p>
+            <span class="feature-cta">Try the search →</span>
+          </div>
+          <div class="feature-card glass reveal card-3d" data-goto="explore">
+            <div class="feature-icon">📚</div>
+            <h3>Curated Resources</h3>
+            <p>Hand-picked docs, courses and books for every stage — no wasted time hunting online.</p>
+            <span class="feature-cta">See resources →</span>
+          </div>
+          <div class="feature-card glass reveal card-3d" data-goto="explore">
+            <div class="feature-icon">🛠️</div>
+            <h3>Real Projects</h3>
+            <p>Every roadmap ships with practical build projects so you learn by doing, not just reading.</p>
+            <span class="feature-cta">See project ideas →</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED ROADMAPS -->
+    <section class="section featured-section">
+      <div class="container">
+        <p class="eyebrow reveal">GET STARTED</p>
+        <h2 class="section-title reveal">Popular roadmaps engineers are building right now</h2>
+        <div class="grid roadmap-grid" id="featuredRoadmaps"><!-- injected by JS --></div>
+        <div class="center-cta reveal">
+          <a href="#explore" class="btn btn-primary" data-nav="explore">View All 32 Roadmaps</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section how-section">
+      <div class="container">
+        <p class="eyebrow reveal">HOW IT WORKS</p>
+        <h2 class="section-title reveal">Three steps to your next engineering role</h2>
+        <div class="steps">
+          <div class="step reveal" data-goto="signup">
+            <div class="step-num">01</div>
+            <h3>Create your account</h3>
+            <p>Sign up in seconds — your data stays on your device via secure local storage.</p>
+            <span class="feature-cta">Create account →</span>
+          </div>
+          <div class="step-connector"></div>
+          <div class="step reveal" data-goto="explore">
+            <div class="step-num">02</div>
+            <h3>Pick your roadmap</h3>
+            <p>Search or filter by category to find the exact engineering path you want to master.</p>
+            <span class="feature-cta">Browse roadmaps →</span>
+          </div>
+          <div class="step-connector"></div>
+          <div class="step reveal" data-goto="dashboard">
+            <div class="step-num">03</div>
+            <h3>Track your progress</h3>
+            <p>Check off skills, bookmark favorites, and watch your dashboard fill up with wins.</p>
+            <span class="feature-cta">Open dashboard →</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonial-section">
+      <div class="container">
+        <p class="eyebrow reveal">SUCCESS STORIES</p>
+        <h2 class="section-title reveal">Engineers who leveled up with a plan</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial-card glass reveal">
+            <p>"I went from tutorial hell to a structured plan. The Full Stack roadmap alone got me my first internship."</p>
+            <div class="testimonial-author"><span class="avatar">AR</span><div><strong>Aditi Rao</strong><small>Frontend Engineer</small></div></div>
+          </div>
+          <div class="testimonial-card glass reveal">
+            <p>"The progress checklist is addictive in the best way. I finally finished the DevOps roadmap end to end."</p>
+            <div class="testimonial-author"><span class="avatar">MK</span><div><strong>Manish Kumar</strong><small>DevOps Engineer</small></div></div>
+          </div>
+          <div class="testimonial-card glass reveal">
+            <p>"Bookmarking roadmaps and coming back on my dashboard keeps me consistent. Simple and effective."</p>
+            <div class="testimonial-author"><span class="avatar">SP</span><div><strong>Sara Patel</strong><small>Data Scientist</small></div></div>
+          </div>
+        </div>
+        <div class="center-cta reveal">
+          <a href="#contact" class="btn btn-outline" data-nav="contact">Share Your Success Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band reveal">
+      <div class="container cta-band-inner">
+        <h2>Your engineering future starts with one click.</h2>
+        <a href="#signup" class="btn btn-primary btn-lg" data-nav="signup">Get Started — It's Free</a>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- ================= LOGIN PAGE ================= -->
+  <section class="page auth-page" id="page-login" data-page="login">
+    <div class="auth-bg"><div class="glow glow-red"></div></div>
+    <div class="container auth-container">
+      <div class="auth-card glass reveal">
+        <div class="auth-head">
+          <span class="brand-mark">FE</span>
+          <h2>Welcome back</h2>
+          <p>Log in to continue your engineering journey.</p>
+        </div>
+        <form id="loginForm" class="auth-form" novalidate>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" id="loginEmail" placeholder="you@example.com" required>
+          </label>
+          <label class="field">
+            <span>Password</span>
+            <input type="password" name="password" id="loginPassword" placeholder="••••••••" required minlength="6">
+          </label>
+          <p class="field-error" id="loginError"></p>
+          <button type="submit" class="btn btn-primary btn-block">Log In</button>
+        </form>
+        <p class="auth-switch">Don't have an account? <a href="#signup" data-nav="signup">Sign up</a></p>
+        <p class="auth-hint">Demo tip: create an account first — data is stored locally in your browser.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SIGNUP PAGE ================= -->
+  <section class="page auth-page" id="page-signup" data-page="signup">
+    <div class="auth-bg"><div class="glow glow-white"></div></div>
+    <div class="container auth-container">
+      <div class="auth-card glass reveal">
+        <div class="auth-head">
+          <span class="brand-mark">FE</span>
+          <h2>Create your account</h2>
+          <p>Join Future Engineer and start tracking your growth.</p>
+        </div>
+        <form id="signupForm" class="auth-form" novalidate>
+          <label class="field">
+            <span>Full name</span>
+            <input type="text" name="name" id="signupName" placeholder="Jane Doe" required minlength="2">
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" id="signupEmail" placeholder="you@example.com" required>
+          </label>
+          <label class="field">
+            <span>Password</span>
+            <input type="password" name="password" id="signupPassword" placeholder="Min. 6 characters" required minlength="6">
+          </label>
+          <label class="field">
+            <span>Confirm password</span>
+            <input type="password" name="confirm" id="signupConfirm" placeholder="Repeat password" required minlength="6">
+          </label>
+          <p class="field-error" id="signupError"></p>
+          <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+        </form>
+        <p class="auth-switch">Already have an account? <a href="#login" data-nav="login">Log in</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DASHBOARD PAGE ================= -->
+  <section class="page" id="page-dashboard" data-page="dashboard">
+    <div class="container dash-container">
+      <div class="dash-header reveal">
+        <div>
+          <p class="eyebrow">DASHBOARD</p>
+          <h1>Welcome back, <span id="dashUserName" class="text-gradient">Engineer</span></h1>
+          <p class="hero-sub-sm">Here's a snapshot of your engineering journey.</p>
+        </div>
+        <button class="btn btn-outline" id="logoutBtn">Log Out</button>
+      </div>
+
+      <div class="dash-stats reveal">
+        <div class="dash-stat-card glass">
+          <span class="dash-stat-num" id="statBookmarks">0</span>
+          <span class="dash-stat-label">Bookmarked Roadmaps</span>
+        </div>
+        <div class="dash-stat-card glass">
+          <span class="dash-stat-num" id="statStarted">0</span>
+          <span class="dash-stat-label">Roadmaps In Progress</span>
+        </div>
+        <div class="dash-stat-card glass">
+          <span class="dash-stat-num" id="statCompleted">0</span>
+          <span class="dash-stat-label">Roadmaps Completed</span>
+        </div>
+        <div class="dash-stat-card glass">
+          <span class="dash-stat-num" id="statSkills">0</span>
+          <span class="dash-stat-label">Skills Checked Off</span>
+        </div>
+      </div>
+
+      <div class="dash-columns">
+        <div class="dash-col reveal">
+          <div class="dash-col-head">
+            <h2>Your Bookmarks</h2>
+            <a href="#explore" data-nav="explore" class="link-arrow">Browse more →</a>
+          </div>
+          <div id="dashBookmarks" class="dash-list"><!-- injected --></div>
+        </div>
+        <div class="dash-col reveal">
+          <div class="dash-col-head">
+            <h2>Continue Learning</h2>
+          </div>
+          <div id="dashProgress" class="dash-list"><!-- injected --></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPLORE ROADMAPS PAGE ================= -->
+  <section class="page" id="page-explore" data-page="explore">
+    <div class="container">
+      <div class="explore-head reveal">
+        <p class="eyebrow">EXPLORE</p>
+        <h1 class="section-title">All Engineering Roadmaps</h1>
+        <p class="hero-sub-sm">Search, filter, and pick the path that matches where you want to go.</p>
+      </div>
+
+      <div class="explore-controls reveal">
+        <div class="search-bar glass">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <input type="text" id="searchInput" placeholder="Search roadmaps — e.g. React, DevOps, Machine Learning...">
+        </div>
+        <div class="filter-chips" id="categoryFilters"><!-- injected --></div>
+      </div>
+
+      <p class="results-count" id="resultsCount"></p>
+      <div class="grid roadmap-grid" id="allRoadmaps"><!-- injected --></div>
+      <p class="no-results" id="noResults" hidden>No roadmaps match your search. Try a different keyword or filter.</p>
+    </div>
+  </section>
+
+  <!-- ================= ROADMAP DETAIL PAGE ================= -->
+  <section class="page" id="page-roadmap" data-page="roadmap">
+    <div class="container">
+      <button class="back-btn" id="backToExplore">← Back to Roadmaps</button>
+      <div id="roadmapDetail"><!-- injected --></div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT PAGE ================= -->
+  <section class="page" id="page-contact" data-page="contact">
+    <div class="container contact-container">
+      <div class="explore-head reveal">
+        <p class="eyebrow">CONTACT</p>
+        <h1 class="section-title">Let's talk engineering</h1>
+        <p class="hero-sub-sm">Questions, feedback, or partnership ideas — send them our way.</p>
+      </div>
+      <div class="contact-grid">
+        <form id="contactForm" class="auth-card glass reveal contact-form" novalidate>
+          <label class="field">
+            <span>Your name</span>
+            <input type="text" id="contactName" required minlength="2" placeholder="Jane Doe">
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" id="contactEmail" required placeholder="you@example.com">
+          </label>
+          <label class="field">
+            <span>Message</span>
+            <textarea id="contactMessage" rows="5" required minlength="10" placeholder="Tell us what's on your mind..."></textarea>
+          </label>
+          <p class="field-error" id="contactError"></p>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+        <div class="contact-info reveal">
+          <div class="info-card glass">
+            <h3>📍 Location</h3>
+            <p>Hyderabad, Telangana, India</p>
+          </div>
+          <div class="info-card glass">
+            <h3>✉️ Email</h3>
+            <p>hello@futureengineer.dev</p>
+          </div>
+          <div class="info-card glass">
+            <h3>💬 Response Time</h3>
+            <p>We usually reply within 24–48 hours.</p>
+          </div>
+          <div class="info-card glass">
+            <h3>🌐 Follow</h3>
+            <div class="social-row">
+              <button type="button" class="social-btn" data-social="Twitter / X" aria-label="Twitter">𝕏</button>
+              <button type="button" class="social-btn" data-social="LinkedIn" aria-label="LinkedIn">in</button>
+              <button type="button" class="social-btn" data-social="GitHub" aria-label="GitHub">gh</button>
+              <button type="button" class="social-btn" data-social="YouTube" aria-label="YouTube">yt</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-col footer-brand">
+      <a href="#home" data-nav="home" class="brand">
+        <span class="brand-mark">FE</span>
+        <span class="brand-name">Future<em>Engineer</em></span>
+      </a>
+      <p>Structured roadmaps for every software engineering career, built for people who'd rather ship than scroll.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#explore" data-nav="explore">Roadmaps</a>
+      <a href="#dashboard" data-nav="dashboard">Dashboard</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <a href="#explore" data-nav="explore" data-footer-cat="Web Development">Web Development</a>
+      <a href="#explore" data-nav="explore" data-footer-cat="Data & AI">Data &amp; AI</a>
+      <a href="#explore" data-nav="explore" data-footer-cat="Cloud & DevOps">Cloud &amp; DevOps</a>
+      <a href="#explore" data-nav="explore" data-footer-cat="Security">Security</a>
+    </div>
+    <div class="footer-col">
+      <h4>Account</h4>
+      <a href="#login" data-nav="login">Log In</a>
+      <a href="#signup" data-nav="signup">Sign Up</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year"></span> Future Engineer. All rights reserved.</p>
+    <p>Built with HTML, CSS &amp; JavaScript — no frameworks.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
